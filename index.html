@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おすすめ商品ページ</title>
+    <link rel="stylesheet" href="shop_view.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="store-name">川越土産 電大通り店 </div>
+            <select class="language-select" onclick="goTostore1Page()">
+                <option value="ja">Japanese</option>
+                <option value="en">English</option>
+                <option value="ch">Chinese</option>
+                <option value="ko">Korean</option>
+            </select>
+            <button class="back-btn" onclick="goBackPage()">戻る</button></td>
+        </div>
+
+        <!-- 商品1 -->
+        <div class="product-block">
+            <div class="image"><img src="https://img11.shop-pro.jp/PA01292/870/product/78038772.jpg?cmsp_timestamp=20200912144817" alt="商品1の画像"></div>
+            <div class="product-info">
+                <div class="product-name">電大ソフト</div>
+                <div class="product-price">300円</div>
+                <div class="description">この商品の説明文がここに表示されます。短い説明文がここに入ります。</div>
+            </div>
+        </div>
+
+        <!-- 商品2 -->
+        <div class="product-block">
+            <div class="image"><img src="https://assets.st-note.com/production/uploads/images/35984024/picture_pc_f8bb095a2742fa38dbe0cb93a9d242ab.jpg?width=800" alt="画像2の画像"></div>
+            <div class="product-info">
+                <div class="product-name">川越プリン</div>
+                <div class="product-price">390円</div>
+                <div class="description">この商品の説明文がここに表示されます。</div>
+            </div>
+        </div>
+
+        <!-- 商品3 -->
+        <div class="product-block">
+            <div class="image"><img src="https://images-ext-1.discordapp.net/external/eiFynLoEQjJj7DYogifz-WT71aRR_WwsNFNC5I3afAs/https/i.pinimg.com/originals/69/31/06/6931060bfcb1893ea337699e43bc81f0.jpg?format=webp&width=978&height=733" alt="画像3の画像"></div>
+            <div class="product-info">
+                <div class="product-name">丁稚芋</div>
+                <div class="product-price">700円</div>
+                <div class="description">この商品の説明文がここに表示されます。</div>
+            </div>
+        </div>
+
+        <!-- 商品4 -->
+        <div class="product-block">
+            <div class="image"><img src="https://cdn.discordapp.com/attachments/1282337817736773673/1282913412765978659/DA4581D287EB4CDFB5D5DDE9848EE85A_L.png?ex=66e115b8&is=66dfc438&hm=caa706997128151f83f1ac9cf3637c2d2dd047d7f1952f934745054bbb2c852c&" alt="画像4の画像"></div>
+            <div class="product-info">
+                <div class="product-name">お芋deショコラ</div>
+                <div class="product-price">300円</div>
+                <div class="description">この商品の説明文がここに表示されます。</div>
+            </div>
+        </div>
+
+        <!-- 商品5 -->
+        <div class="product-block">
+            <div class="image"><img src="https://img-cdn.guide.travel.co.jp/article/458/34446/54D5482E80444A47BD2FC3443D480E32_L.jpg" alt="画像5の画像"></div>
+            <div class="product-info">
+                <div class="product-name">お芋のソフトクリーム</div>
+                <div class="product-price">500円</div>
+                <div class="description">この商品の説明文がここに表示されます。</div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function goBackPage() {
+            window.location.href = "main.html"; // 遷移先のURLを指定
+        }
+        function changeLanguage() {
+            var select = document.getElementById("language-select");
+            var language = select.value;
+
+            if (language === "ja") {
+                window.location.href = "shop_view.html";
+            }
+            else if (language === "en") {
+                window.location.href = "";
+            }
+            else if (language === "ch") {
+                window.location.href = "";
+            }
+            else if (language === "ko") {
+                window.location.href = "";
+            }
+            
+        }
+    </script>
+</body>
+</html>
